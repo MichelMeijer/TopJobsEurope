@@ -16,3 +16,12 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+//Implement this later
+Route::get('/jobs', 'ApiController@index');
+
+//should be deleted??
+Route::get('/', 'ApiController@test');
+
+Route::post('/jobs', 'ApiController@store');
+

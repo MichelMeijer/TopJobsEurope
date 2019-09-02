@@ -1,0 +1,129 @@
+/*!
+ * Start Bootstrap - Heroic Features (https://startbootstrap.com/template-overviews/heroic-features)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-heroic-features/blob/master/LICENSE)
+ */
+body {
+  padding-top: 56px;
+  font-family: 'Italiana', serif;
+  font-family: 'Content', cursive;
+}
+
+.btn-primary {
+  background-color: #fff;
+  color: #000;
+  }
+
+  .btn-primary:hover {
+    color: #fff;
+  }
+
+.jumbotron.my-4 {
+  display: flex;
+  justify-content: center;
+  color: #000;
+  background-color: #ffff7f;
+}
+
+/* Navbar */
+.nav-link, .navbar.navbar-expand-lg, .navbar-nav.ml-auto {
+  color: #ffff32;
+  font-size: 18px;
+}
+
+.nav-item {
+  color: #ffff32;
+}
+
+.navbar-toggler-icon {
+  color: #fff;
+}
+
+.navbar-brand {
+  color: #ffff00;
+  font-size: 24px;
+  font-family: 'Italiana', serif;
+  font-weight: bold;
+}
+/* Navbar */
+
+.maincontent {
+  margin-top: 1.5rem !important;
+}
+
+.bottom_margin {
+  margin-bottom: 1.5rem !important;
+}
+
+.card-body {
+  color: #000;
+  background-color: #ffffb2;
+}
+
+.card-footer {
+  background-color: #ffef61;
+}
+
+.py-5.bg-dark {
+  color: #fff;
+  background-color: #4c4c4c;
+  font-weight: 400;
+  font-size: 20px;
+  margin-top: 0;
+  padding-top: 0;
+  height: 50px;
+  width: 100%;
+}
+
+.nav-link {
+  color: #ffff00;
+}
+
+.card-img-top {
+  max-width: 100%;
+  height: 200px;
+  background-size: cover;
+  position: relative;
+  background-repeat: no-repeat;
+  float: left;
+  background-position: 50% 50%;
+}
+
+.mypagination {
+  display: flex;
+  justify-content: center;
+}
+
+.collapse.show, .nav-item {
+  display: flex;
+  justify-content: center; 
+}
+
+.collapse.show {
+  background-color: #6e6b6a;
+}
+
+.text-lead {
+  text-align: left;
+  margin-left: 20%;
+  /* text-indent: 30%; */
+}
+
+
+@media (max-width: 1024px) {
+
+.navbar-nav {
+  margin-left: 0 !important;
+}
+
+.display-3 {
+  font-size: 30px;
+  font-weight: 400;
+}
+.lead {
+  font-size: 15px;
+}
+.m-0 {
+  font-size: 20px;
+}
+}

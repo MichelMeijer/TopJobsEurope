@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Jobs;
+use App\Rules\NoDuplicate;
 
 class ApiController extends Controller
 {
@@ -15,13 +16,15 @@ class ApiController extends Controller
         return view('');
     }
 
-    public function createJobForm() {
-        return view('createJob');
-    }
+    public function store() {
+        //TODO check why no validation errors are shown
+        request()->validate([
+            'short_description' => ['required', new NoDuplicate]
+        ]);
+        // $this->validate(request(), ['short_description' => new NoDuplicate]);
 
-    public function createJob() {
         Jobs::create(request()->all());
-
+       
         return redirect("/");
     }
 }
