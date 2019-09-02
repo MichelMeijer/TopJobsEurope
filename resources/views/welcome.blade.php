@@ -7,12 +7,6 @@
       <div class="column text-center">
       <h1 class="display-3">Welcome to TopJobsEurope!</h1>
       <p class="lead">
-        <div class="text-lead">
-          <li>We offer jobs in Amsterdam, Berlin and Prague.</li>
-          <li>We offer the opportunity to create an online applicant profile for free!</li> 
-          <li>We offer an platform where recruiters can post jobs and search profiles of applicants.</li> 
-          <li>We offer premium recruiter services </li>
-        </div>
       </p>
       <a href="#" class="btn btn-primary btn-lg">Get in touch</a>
     </div>
