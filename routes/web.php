@@ -14,8 +14,12 @@
 Route::get('/', 'MainController@index');
 
 Route::get('/jobs/create', 'JobsController@createJobForm')->middleware('auth');
+Route::get('/update/jobs/{id}', 'JobsController@edit')->middleware('auth');
+
 
 Route::get('/jobs/{id}', 'JobsController@showJob');
+
+Route::get('/jobs/cityfilter/{city}', 'MainController@getJobs');
 
 Auth::routes();
 

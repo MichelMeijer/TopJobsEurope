@@ -23,4 +23,11 @@ class JobsController extends Controller
         return view('createJob', compact('user_id'));
     }
 
+    public function edit($id) {
+        $user_id = auth()->user()->id;
+        $job = Jobs::where('id', $id)->first();
+        
+        return view('editJob', compact('job', 'user_id'));
+    }
+
 }

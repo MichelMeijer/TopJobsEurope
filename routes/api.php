@@ -25,3 +25,8 @@ Route::get('/', 'ApiController@test');
 
 Route::post('/jobs', 'ApiController@store');
 
+Route::delete('/jobs/{id}', 'ApiController@destroy');
+
+
+
+
