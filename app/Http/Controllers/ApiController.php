@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Jobs;
 use App\Rules\NoDuplicate;
+use Auth;
 
 class ApiController extends Controller
 {
@@ -27,4 +28,15 @@ class ApiController extends Controller
        
         return redirect("/");
     }
+
+    public function destroy($id) {
+        $job = Jobs::select("user_id")->where("id", $id)->first();
+        Jobs::where("id", $id)->delete();
+        $redirect_url = "/users/" . $job->user_id;
+         
+        return redirect($redirect_url);
+    }
+   
+    
 }
+

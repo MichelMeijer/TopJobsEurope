@@ -12,13 +12,16 @@
     <!-- <link href="<?php echo e(asset('css/app.css')); ?>" rel="stylesheet" /> -->
     <link href="https://fonts.googleapis.com/css?family=Italiana&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Content=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+
 
     <!-- Bootstrap core CSS -->
     <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
+    
     <!-- Custom styles for this template -->
     <link href="/css/heroic-features.css" rel="stylesheet">
-
+    <link rel="stylesheet" type="text/css" href="style.css">
         <title>Laravel</title>
 
         <!-- Styles -->
@@ -27,11 +30,11 @@
         </style>
     </head>
     <body>
-        <div class="container">
+        <!--<div class="container">-->
              <!-- Navigation -->
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
               <div class="container">
-                <a class="navbar-brand">TopJobsEurope</a>
+                <a class="navbar-brand" href="/">TopJobsEurope</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
@@ -87,21 +90,56 @@
                 </div>
               </div>
             </nav>
-
+            
         <?php echo $__env->yieldContent('content'); ?>  
-        </div>
+       
+
+
 
           <!-- Footer -->
+          <!--<div class="container">-->
   <footer class="py-5 bg-dark">
-    <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; TJE 2019</p>
-    </div>
-    <!-- /.container -->
+      <p class="m-0 text-center text-white">Copyright &copy; TJE 2019</p>  
   </footer>
+         <!--</div>-->
+          <!--</div>-->
+  
+
+  <script src="/vendor/jquery/jquery.min.js"></script>
+<script>
+
+$(document).ready(function(){
+  // Activate Carousel
+  $("#myCarousel").carousel();
+
+  // Enable Carousel Indicators
+  $(".item1").click(function(){
+    $("#myCarousel").carousel(0);
+  });
+  $(".item2").click(function(){
+    $("#myCarousel").carousel(1);
+  });
+  $(".item3").click(function(){
+    $("#myCarousel").carousel(2);
+  });
+
+
+  // Enable Carousel Controls
+  $(".left").click(function(){
+    $("#myCarousel").carousel("prev");
+  });
+  $(".right").click(function(){
+    $("#myCarousel").carousel("next");
+  });
+});
+</script>
 
   <!-- Bootstrap core JavaScript -->
-  <script src="/vendor/jquery/jquery.min.js"></script>
+  
   <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
   
     </body>
 </html><?php /**PATH /home/michel/Documents/LaravelLab/TopJobsEuropeTest/resources/views/layout.blade.php ENDPATH**/ ?>

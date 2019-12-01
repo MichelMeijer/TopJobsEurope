@@ -1,19 +1,21 @@
-<?php $__env->startSection('content'); ?>
+@extends('layout')
+
+@section('content')
 
 <div class="container maincontent bottom_margin">
     <div class="row justify-content-center">
-        <h2 class="create_job">Create job</h2>
+        <h2 class="create_job">Edit job</h2>
     </div>
 
     <div class="row justify-content-center">
         <form method="POST" action="/api/jobs">
 
-            <?php echo csrf_field(); ?>
+            @csrf
 
             <div class="field col-sm-6">
                 <label class="label" for="title">Job Title</label>
                 <div class="control">
-                    <input type="text" class="input" name="title" value="title">  
+                    <input type="text" class="input" name="title" value="{{ $job->title}}">  
                 </div>
             </div>
 
@@ -34,7 +36,7 @@
             <div class="field col-sm-6">
                 <label class="label" for="title">Short description</label>
                 <div class="control">
-                    <input type="text" class="input" name="short_description" value="short description">  
+                    <input type="text" class="input" name="short_description" value="{{ $job->short_description}}">  
                 </div>
             </div>
 
@@ -73,14 +75,14 @@
                 </div>
             </div>
 
-            <input type="hidden" value="<?php echo e($user_id); ?>" name="user_id">
+            <input type="hidden" value="{{$user_id}}" name="user_id">
 
             <div class="notification is-danger">
                 <ul> 
-                    <?php $__currentLoopData = $errors->all(); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $error): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                    @foreach ($errors->all() as $error)
                     <p>here</p>
-                    <li><?php echo e($error); ?> </li>
-                    <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>     
+                    <li>{{ $error}} </li>
+                    @endforeach     
                 </ul>
             </div>
 
@@ -92,5 +94,4 @@
         </form>
     </div>
 </div>
-<?php $__env->stopSection(); ?>
-<?php echo $__env->make('layout', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH /home/michel/Documents/LaravelLab/TopJobsEuropeTest/resources/views/createJob.blade.php ENDPATH**/ ?>
+@endsection
