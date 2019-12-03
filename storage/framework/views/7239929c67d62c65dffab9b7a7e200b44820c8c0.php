@@ -88,12 +88,12 @@
                 </div>                    
             <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
     </div>
-    </div>
-<div class= "column text-center">
-  <div class="mypagination">
-  <?php echo e($jobs->links()); ?>
+     <div class= "column text-center">
+       <div class="mypagination">
+       <?php echo e($jobs->links()); ?>
 
-  </div>
+       </div>
+     </div>
 </div>
 <?php $__env->stopSection(); ?>
 

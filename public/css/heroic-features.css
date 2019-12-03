@@ -16,20 +16,36 @@
 
 @import url('https://fonts.googleapis.com/css?family=Black+And+White+Picture|Faster+One&display=swap');
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   padding-top: 56px;
   font-family: 'Italiana', serif;
   font-family: 'Content', cursive;
+  /* position: relative; */
+  height: 100%;
+  margin: 0;
+  /* background-color: black; */
+}
+html {
+  height: 100%;
+  padding-bottom: 0;
 }
 
 .container {
-  min-height: 100%;
-  position: relative;
+  width: 100%;
+  /* position: relative; */
+  /* display: block; */
+  /* min-height: 100%; */
+
 }
 
 .btn-primary {
   background-color: #fff;
   color: #000;
+  font-size: 16px;
   }
 
   .btn-primary:hover {
@@ -37,7 +53,6 @@ body {
   }
 
 .jumbotron.my-4 {
-  display: flex;
   justify-content: center;
   color: #000;
   background-color: #ffff7f;
@@ -73,7 +88,7 @@ a.carousel-control:hover, a.carousel-control:active {
  }
 
  .carousel.slide {
-    justify-content: center;
+    align-items: center;
  }
 
  .carousel-inner a:link, .carousel-inner a:visited {
@@ -88,7 +103,7 @@ a.carousel-control:hover, a.carousel-control:active {
   font-weight: 500;
   cursor: pointer;
   letter-spacing: 1px;
-  justify-content: center;
+  align-items: center;
 
  }
 
@@ -114,6 +129,19 @@ a.carousel-control:hover, a.carousel-control:active {
 
 .mystyle {
   border-radius: 8px;
+}
+
+.newmember {
+  text-align: center;
+}
+
+.card-header{
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.btn-link {
+  font-size: 16px;
 }
 
  /* End Carousel  */
@@ -188,19 +216,19 @@ padding: 25px 15px;
 }
 
 .py-5.bg-dark {
-  display: inline-block;
-  position: fixed;
+  display: block;
   color: #fff;
   background-color: #4c4c4c;
   font-weight: 400;
   font-size: 20px;
-  height: 50px;
   width: 100%;
   left: 0;
-  bottom: 0;
   text-align: center;
   border-radius: 4px;
   padding-bottom: 0;
+  position: relative;
+  bottom: 0;
+  height: 80px;
 }
 
 .nav-link {
@@ -219,13 +247,11 @@ padding: 25px 15px;
 }
 
 .mypagination {
-  display: flex;
-  justify-content: center;
+  align-items: center;
 }
 
-.collapse.show, .nav-item {
-  display: flex;
-  justify-content: center; 
+.collapse.show, .nav-item { 
+  align-items: center; 
 }
 
 .collapse.show {
@@ -286,6 +312,24 @@ a {
 
  .description {
   font-size: 20px;
+}
+
+.mypagination {
+  padding-bottom: 80px;
+  align-self: center;
+}
+
+.pagination {
+  justify-content: center;
+}
+
+.page-link {
+  font-size: 16px;
+}
+
+.row.text-center.maincontent {
+  justify-content: center;
+  padding-top: 30px;
 }
 
 /* End profile page */
@@ -429,6 +473,10 @@ a {
   .textarea {
     height:150px;
     width:400px;
+  }
+
+  .card {
+    padding: 50px; 
   }
 }
 
