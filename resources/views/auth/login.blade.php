@@ -4,7 +4,6 @@
 <div class="container">
     <div class="row justify-content-center maincontent bottom_margin">
         <div class="col-md-8">
-        <p>New? <a class="btn btn-primary" href="/register/overview">Click here to Register</a><p>
 
             <div class="card">
                 <div class="card-header">{{ __('Login') }}</div>
@@ -46,7 +45,7 @@
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
 
-                                    <label class="form-check-label" for="remember">
+                                    <label class="form-check-label" for="remember">&nbsp;&nbsp;&nbsp;&nbsp;
                                         {{ __('Remember Me') }}
                                     </label>
                                 </div>
@@ -67,7 +66,8 @@
                             </div>
                         </div>
                     </form>
-                </div>
+                </div>&nbsp;
+                <h2 class="newmember">New member? <a class="btn btn-primary" href="/register/overview">Click here to Register</a> </h2>
             </div>
         </div>
     </div>

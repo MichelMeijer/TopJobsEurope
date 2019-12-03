@@ -97,12 +97,12 @@
 
 
           <!-- Footer -->
-          <!--<div class="container">-->
+          <div class="footer navbar-fixed-bottom"> 
   <footer class="py-5 bg-dark">
       <p class="m-0 text-center text-white">Copyright &copy; TJE 2019</p>  
   </footer>
-         <!--</div>-->
-          <!--</div>-->
+         </div>
+          
   
 
   <script src="/vendor/jquery/jquery.min.js"></script>

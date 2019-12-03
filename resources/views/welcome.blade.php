@@ -90,10 +90,10 @@
                 </div>                    
             @endforeach
     </div>
-    </div>
-<div class= "column text-center">
-  <div class="mypagination">
-  {{ $jobs->links() }}
-  </div>
+     <div class= "column text-center">
+       <div class="mypagination">
+       {{ $jobs->links() }}
+       </div>
+     </div>
 </div>
 @endsection
