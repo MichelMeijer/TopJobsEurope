@@ -6,7 +6,7 @@
                 <div class="col-lg-3 col-md-6 mb-4">
                   <div class="card h-100">
                   <h3><b>I am a recruiter</b></h3>
-                  <div class="card-img-top" style="background-image: url('/img/jobsearch.jpg')">  
+                  <div class="card-img-top" style="background-image: url('/img/recphoto.jpg')">  
                   </div>
                     <div class="card-body">
                       <p class="card-title"><b></b></p>

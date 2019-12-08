@@ -43,7 +43,7 @@ html {
 }
 
 .btn-primary {
-  background-color: #fff;
+  background-color: #ffff4c;
   color: #000;
   font-size: 16px;
   border: 4px #555;
@@ -138,10 +138,6 @@ a.carousel-control:hover, a.carousel-control:active {
   border-radius: 8px;
 }
 
-.newmember {
-  text-align: center;
-}
-
 .card-header{
   font-size: 24px;
   font-weight: 500;
@@ -221,6 +217,43 @@ padding: 25px 15px;
 .card-footer {
   background-color: #ffef61;
 }
+
+/*Login*/
+
+.col-md-8 {
+  background-color:#fefbd8;
+  justify-content: center;
+  padding-top: 25px;
+}
+
+.btn.btn-primary2 {
+  font-size: 18px;
+  border: 2px solid #4c4c4c;
+  border-radius: 4px;
+}
+
+.btn-primary2:hover {
+  color: #fff;
+  background-color: #6e6b6a;
+  border: 2px solid #555;
+}
+
+.card-header {
+  text-align: center;
+}
+
+.btn-link {
+  color: #000;
+  border: 2px solid #555;
+}
+
+
+.newmember {
+  text-align: center;
+  font-size: 18px;
+}
+
+/*End login*/
 
 .py-5.bg-dark {
   /* display: block; */
@@ -343,6 +376,14 @@ a {
   padding-top: 30px;
 }
 
+.control {
+  padding-bottom: 30px;
+}
+
+.dropdown-item {
+  font-size: 16px;
+  font-weight: 500;
+}
 
 /* End profile page */
 

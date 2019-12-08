@@ -37,6 +37,18 @@ class ApiController extends Controller
         return redirect($redirect_url);
     }
    
+    public function update($id) {
+        request()->validate([
+            'short_description' => ['required', new NoDuplicate]
+        ]);
+
+        $job = Jobs::where("id", $id)->first();
+        $job->update(request()->all());
+
+        $redirect_url = "/users/" . $job->user_id;
+
+        return redirect($redirect_url);
+    }
     
 }
 

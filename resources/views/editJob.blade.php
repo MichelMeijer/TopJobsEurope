@@ -8,9 +8,10 @@
     </div>
 
     <div class="row justify-content-center">
-        <form method="POST" action="/api/jobs">
+        <form method="POST" action="/api/jobs/{{ $job->id}}">
 
             @csrf
+            {{ method_field('PATCH') }}
 
             <div class="field col-sm-6">
                 <label class="label" for="title">Job Title</label>
@@ -22,14 +23,14 @@
             <div class="field col-sm-6">
                 <label class="label" for="title">City</label>
                 <div class="control">
-                    <input type="text" class="input" name="city" value="city">  
+                    <input type="text" class="input" name="city" value="{{ $job->city}}">  
                 </div>
             </div>
 
             <div class="field col-sm-6">
                 <label class="label" for="title">Country</label>
                 <div class="control">
-                    <input type="text" class="input" name="country" value="country">  
+                    <input type="text" class="input" name="country" value="{{ $job->country}}">  
                 </div>
             </div>
 
@@ -43,35 +44,35 @@
             <div class="field col-sm-6">
                 <label class="label" for="title">Link to job</label>
                 <div class="control">
-                    <input type="text" class="input" name="url" value="url">  
+                    <input type="text" class="input" name="url" value="{{ $job->url}}">  
                 </div>
             </div>
 
             <div class="field col-sm-6">
                 <label class="label" for="title">Language</label>
                 <div class="control">
-                    <input type="text" class="input" name="language" value="-">  
+                    <input type="text" class="input" name="language" value="{{ $job->language}}">  
                 </div>
             </div>
 
             <div class="field col-sm-6">
                 <label class="label" for="title">Sector</label>
                 <div class="control">
-                    <input type="text" class="input" name="sector" value="-">  
+                    <input type="text" class="input" name="sector" value="{{ $job->sector}}">  
                 </div>
             </div>
 
             <div class="field col-sm-6">
                 <label class="label" for="title">Salary</label>
                 <div class="control">
-                    <input type="number" class="input salary" name="salary" value="0">  
+                    <input type="number" class="input salary" name="salary" value="{{ $job->salary}}">  
                 </div>
             </div>
 
             <div class="field col-sm-12">
                 <label class="label" for="description">Job description</label>
                 <div class="control">
-                    <textarea name="description" class="textarea">Description</textarea>
+                    <textarea name="description" class="textarea">{{ $job->description}}</textarea>
                 </div>
             </div>
 

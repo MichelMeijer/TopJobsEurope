@@ -27,6 +27,11 @@ Route::post('/jobs', 'ApiController@store');
 
 Route::delete('/jobs/{id}', 'ApiController@destroy');
 
+Route::patch('/jobs/{id}', 'ApiController@update');
+
+
+
+
 
 
 
